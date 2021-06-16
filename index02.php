@@ -17,41 +17,41 @@
             <?php 
                 // var_dump($_POST);
     
-                // if(isset($_POST['name'])) {
-                // $result = $_POST['name'];
+                if(isset($_POST['name'])) {
+                $result = $_POST['name'];
 
-                //  if(empty($result)) {
-                //  echo "<script language='JavaScript'>alert('Input NOM requis !')</script>";
-                //     } elseif(!preg_match("/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/", $result)) {
-                //     echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
-                //     } else {
-                //     echo '  '. 'NOM : '. $_POST['name'];
-                //     }
-                // }
+                 if(empty($result)) {
+                 echo "<script language='JavaScript'>alert('Input NOM requis !')</script>";
+                    } elseif(!preg_match("/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/", $result)) {
+                    echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
+                    } else {
+                    echo '  '. 'NOM : '. $_POST['name'];
+                    }
+                }
 
-                // if(!($_POST['firstName'])) {
-                // $result2 = $_POST['firstName'];
+                if(!($_POST['firstName'])) {
+                $result2 = $_POST['firstName'];
 
-                //  if(empty($result2))
-                //     echo "<script language='JavaScript'>alert('Input PRÉNOM requis !')</script>";
-                //  elseif(!preg_match("/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/", $result2))
-                //     echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
-                // else
-                //     echo '  '. 'PRÉNOM : '. $_POST['firstName'];
+                 if(empty($result2))
+                    echo "<script language='JavaScript'>alert('Input PRÉNOM requis !')</script>";
+                 elseif(!preg_match("/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/", $result2))
+                    echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
+                else
+                    echo '  '. 'PRÉNOM : '. $_POST['firstName'];
                     
-                // }
+                }
             ?>
 
 
             <?php 
                 // var_dump($_POST);
     
-                $verifName = "/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/";
-                if (preg_match($verifName, $_POST['name']) && preg_match($verifName, $_POST['firstName'])){
-                    echo '  '. 'Bonjour : '. $_POST['firstName'].  '  '. $_POST['name'];
-                }else{
-                    echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
-                }
+                // $verifName = "/^[a-zA-Z àâäéèêëïîôöùûüÿ-]*$/";
+                // if (preg_match($verifName, $_POST['name']) && preg_match($verifName, $_POST['firstName'])){
+                //     echo '  '. 'Bonjour : '. $_POST['firstName'].  '  '. $_POST['name'];
+                // }else{
+                //     echo "<script language='JavaScript'>alert('Seulement les lettres et les espaces sont autorisés !')</script>";
+                // }
             ?>
         </div>
     </div>
