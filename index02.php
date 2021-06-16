@@ -29,7 +29,7 @@
                     }
                 }
 
-                if(!($_POST['firstName'])) {
+                if(isset($_POST['firstName'])) {
                 $result2 = $_POST['firstName'];
 
                  if(empty($result2))
